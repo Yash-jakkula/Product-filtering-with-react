@@ -7,72 +7,7 @@ import { Context } from "../context/OrderContext";
 import useSelection from "antd/es/table/hooks/useSelection";
 import { useDispatch, useSelector } from "react-redux";
 import { ProductActions } from "../state/slices/products";
-const items = [
-  {
-    label: (
-      <Link to="/Courses?category=combats">
-        <span className="pr-10">Courses</span>
-      </Link>
-    ),
-    key: "0",
-  },
-  {
-    type: "divider",
-  },
-  {
-    label: (
-      <Link to="/Services">
-        <span>Services</span>
-      </Link>
-    ),
-    key: "1",
-  },
-  {
-    type: "divider",
-  },
-  {
-    label: (
-      <Link to="/Blogs">
-        <span>Blogs</span>
-      </Link>
-    ),
-    key: "2",
-  },
-  {
-    type: "divider",
-  },
-  {
-    label: (
-      <Link to="/Events">
-        <span>Events</span>
-      </Link>
-    ),
-    key: "3",
-  },
-  {
-    type: "divider",
-  },
-  {
-    label: (
-      <Link to="/Careers">
-        <span>Careers</span>
-      </Link>
-    ),
-    key: "4",
-  },
 
-  {
-    type: "divider",
-  },
-  // {
-  //   label: (
-  //     <Link to="/Olympiads">
-  //       <span>Olympiad Mock Tests</span>
-  //     </Link>
-  //   ),
-  //   key: "5",
-  // },
-];
 const DropDown = (catagories) => {
   const cate = catagories.catagories;
   console.log(cate, "cate");
